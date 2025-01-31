@@ -1,0 +1,77 @@
+/* INFOCARDS */
+.page2head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1.5s;
+  margin: 70px auto 0 auto;
+  max-width: 90vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 2px solid #ccc;
+  transition: 1.5s, transform 0.3s, box-shadow 0.3s;
+  animation: rgb 10s alternate infinite;
+}
+
+.page2head p {
+  padding: 6px 0 15px 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1.1px;
+  color: #e6f1f0;
+  font-size: 40px;
+}
+
+.page2 {
+  margin: 80px auto 80px auto;
+  width: 90%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+  /* max-width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.infocard {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px;
+  height: 350px;
+  color: aliceblue;
+  background-color: #212121;
+  border: 2px solid rgb(63, 63, 63);
+  border-radius: 10px;
+  /* line-height: 3; */
+  transition: 0.3s, transform 0.3s, box-shadow 0.2s, filter 0.2s;
+}
+.infocard div p {
+  font-size: 14px;
+  /* font-weight: 100; */
+  /* font-style: normal; */
+  font-family: monospace;
+  unicode-bidi: isolate;
+}
+
+.infocard1:hover {
+  transform: scale(1.1) translateX(100px);
+  box-shadow: 0 0 10px #ea1398;
+  z-index: 1;
+}
+.page2:hover .infocard1:not(:hover) {
+  filter: opacity(50%);
+}
+.infocard2:hover {
+  transform: scale(1.1) translateX(-100px);
+  box-shadow: 0 0 10px rgb(225, 197, 170);
+}
+.page2:hover .infocard2:not(:hover) {
+  filter: opacity(50%);
+}
+.infocard3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #13dcea;
+}

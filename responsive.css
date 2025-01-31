@@ -1,0 +1,217 @@
+/* TO REDUCE NAVBAR FONT SIZE */
+
+@media (max-width: 865px) {
+  .navlistitem a {
+    font-size: 13px;
+    img {
+      width: 12px;
+    }
+  }
+}
+@media (max-width: 865px) {
+}
+
+@media (max-width: 550px) {
+  .navlistitem a {
+    font-size: 13px;
+    img {
+      width: 10px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .navlistitem a {
+    font-size: 12px;
+    padding: 5px;
+    margin: 2px;
+    img {
+      width: 10px;
+    }
+  }
+  .navlistitem a:hover {
+    border-radius: 5px;
+    font-size: 20px;
+    img {
+      width: 16px;
+    }
+  }
+}
+
+/* TO REDUCE IMAGE SIZE AND KEEP IT IN CENTER */
+@media (max-width: 865px) {
+  .homepage img {
+    width: 200px;
+    position: static;
+  }
+  .homepage ul {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* TO ADJUST HOMEPAGETEXT */
+@media (max-width: 865px) {
+  .homepage {
+    height: 100vh;
+    align-items: center;
+  }
+  .homepagetext {
+    position: static;
+    margin-top: 50px;
+    text-align: left;
+    font-size: small;
+  }
+}
+
+@media (max-width: 380px) {
+  .p3 {
+    font-size: x-small;
+  }
+}
+
+/* TO REDUCE PAGE2-3HEAD WIDTH */
+
+@media (max-width: 1320px) {
+  .page2head p,
+  .page2head span {
+    font-size: 25px;
+  }
+
+  .page3head p,
+  .page3head span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 850px) {
+  .page2head p,
+  .page2head span {
+    font-size: 15px;
+  }
+
+  .page3head p,
+  .page3head span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .page2head span {
+    font-size: 9px;
+  }
+
+  .page3head span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .page2head span {
+    font-size: 8px;
+  }
+
+  .page3head span {
+    font-size: 8px;
+  }
+}
+
+/* PAGE2 CONTENT */
+
+@media (max-width: 865px) {
+  .page2 {
+    flex-direction: column;
+    display: flex;
+  }
+  .infocard {
+    width: 80vw;
+    height: fit-content;
+    text-align: center;
+    line-height: 3;
+    font-size: 20px;
+  }
+  pre,
+  b {
+    max-width: 5px;
+    font-size: 5px !important;
+  }
+  .infocard1:hover {
+    transform: translateX(0);
+    box-shadow: 0 0 10px #ea1398;
+    z-index: 1;
+  }
+  .page2:hover .infocard1:not(:hover) {
+    filter: opacity(50%);
+  }
+  .infocard2:hover {
+    transform: translateX(0);
+    box-shadow: 0 0 10px rgb(225, 197, 170);
+  }
+  .page2:hover .infocard2:not(:hover) {
+    filter: opacity(50%);
+  }
+  .infocard3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #13dcea;
+  }
+}
+
+@media (max-width: 1406px) {
+  .infocard {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1320px) {
+  .infocard {
+    font-size: 20px;
+  }
+  .infocard2 p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1046px) {
+  .infocard {
+    font-size: 17px;
+  }
+  .infocard2 p {
+    font-size: 15px;
+  }
+}
+
+/* PAGE 3 */
+
+@media (max-width: 865px) {
+  .page3 {
+    flex-direction: column;
+  }
+  #projects {
+    margin-top: 900px;
+  }
+  .page4head {
+    margin-bottom: 50px;
+  }
+  .page4 {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+  }
+  .contact-right {
+    display: inline;
+  }
+  .contact-names {
+    /* color: #ea1398; */
+    font-size: large;
+  }
+}
+
+@media (max-width: 1406px) {
+  .infocard {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1320px) {
+  .infocard {
+    font-size: 20px;
+  }
+}
