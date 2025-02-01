@@ -126,14 +126,8 @@
   .infocard {
     width: 80vw;
     height: fit-content;
-    text-align: center;
-    line-height: 1;
+    line-height: 1.2;
     font-size: 20px;
-  }
-  pre,
-  b {
-    max-width: 5px;
-    font-size: 5px !important;
   }
   .infocard1:hover {
     transform: translateX(0);
