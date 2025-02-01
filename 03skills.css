@@ -1,0 +1,134 @@
+/* PAGE 3 */
+
+#projects {
+  /* position: absolute; */
+  margin-top: 420px;
+}
+
+@keyframes rgb {
+  0% {
+    border-color: red; /* Red */
+  }
+  16.67% {
+    border-color: orange; /* Orange */
+  }
+  33.33% {
+    border-color: yellow; /* Yellow */
+  }
+  50% {
+    border-color: green; /* Green */
+  }
+  66.67% {
+    border-color: blue; /* Blue */
+  }
+  83.33% {
+    border-color: indigo; /* Indigo */
+  }
+  100% {
+    border-color: violet; /* Violet */
+  }
+}
+
+.page3head {
+  width: 91%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1.5s;
+  margin: 80px auto 80px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 1px solid #ccc;
+  transition: 1.5s;
+  animation: rgb 10s alternate infinite;
+}
+
+.page3head p {
+  padding: 6px 0 15px 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1.1px;
+  color: #fff6e9;
+  font-size: 40px;
+}
+
+.page3 {
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: 1.5s;
+}
+
+.infocard4 {
+  width: 85vw;
+  height: fit-content;
+}
+
+.skill-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill {
+  margin: 20px;
+}
+
+.progress-bar {
+  background-color: #585858;
+  /* border-radius: 10px; */
+  border-bottom-right-radius: 10px;
+  height: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.progress {
+  display: flex;
+  background-color: rgb(225, 197, 170);
+  border-bottom-right-radius: 10px;
+  height: 100%;
+  transition: 1s;
+}
+.progress.visible {
+  animation: progress 3s ease;
+  opacity: 100%;
+  transform: translateY(0);
+}
+@keyframes progress {
+  from {
+    width: 0;
+    background-color: rgb(255, 166, 77);
+  }
+
+  to {
+    width: 100%;
+    background-color: rgb(243, 199, 155);
+  }
+}
+
+.percentage {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.experience-card {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+}
+.experience-card p {
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+}
